@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.yeleman.zerindroid.TaskActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tâches nº 000000"
+        android:id="@+id/task_title_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type de tâche"
+        android:id="@+id/task_type_label"
+        android:layout_weight="0.5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/task_title_label"
+        android:layout_alignRight="@+id/task_total_amount_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID tâche"
+        android:id="@+id/task_id_label"
+        android:layout_weight="0.5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/task_type_label"
+        android:layout_alignRight="@+id/task_total_amount_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Montant total"
+        android:id="@+id/task_total_amount_label"
+        android:layout_weight="0.19"
+        android:layout_below="@+id/task_id_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/task_nb_receipients_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nb. destinataires"
+        android:id="@+id/task_nb_receipients_label"
+        android:layout_weight="0.19"
+        android:layout_below="@+id/task_total_amount_label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Envoi ?"
+        android:id="@+id/task_type_text"
+        android:layout_alignTop="@+id/task_type_label"
+        android:layout_toRightOf="@+id/task_type_label"
+        android:layout_marginLeft="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="000000"
+        android:id="@+id/task_id_text"
+        android:layout_alignTop="@+id/task_id_label"
+        android:layout_toRightOf="@+id/task_id_label"
+        android:layout_marginLeft="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0F CFA"
+        android:id="@+id/task_total_amount_text"
+        android:layout_above="@+id/task_nb_receipients_label"
+        android:layout_alignLeft="@+id/task_id_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/task_nb_recipients_text"
+        android:layout_below="@+id/task_total_amount_text"
+        android:layout_alignLeft="@+id/task_total_amount_text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Démarrer"
+        android:id="@+id/start_task_btn"
+        android:layout_below="@+id/task_nb_receipients_label"
+        android:layout_alignRight="@+id/task_title_label" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/task_recipients_list"
+        android:layout_below="@+id/start_task_btn"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

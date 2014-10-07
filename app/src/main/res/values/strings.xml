@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LKLC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome_text">Renseignez le numéro de tâche LKLC pour récupérer les informations.</string>
+    <string name="fetch_task_btn">Récupérer</string>
+    <string name="task_id_input_hint">Numéro de tâche à 6 chiffres</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="title_activity_task">Tâche</string>
+    <string name="pref_action">Type d\'esclave</string>
+    <string name="pref_action_summary">Actions prises en charge par cet appareil</string>
+    <string name="pref_network">Réseau de l\'esclave</string>
+    <string name="pref_network_summary"></string>
+    <string name="pref_server_url">URL du serveur</string>
+    <string name="pref_server_url_summary">Changer uniquement si vous savez ce que vous faîtes</string>
+
+</resources>

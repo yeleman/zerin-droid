@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <PreferenceCategory android:title="Configuration Générale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditTextPreference
+            android:title="@string/pref_server_url"
+            android:summary="@string/pref_server_url_summary"
+            android:key="serverUrl"
+            android:defaultValue="https://lakali.ylm.io"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ListPreference
+            android:title="@string/pref_action"
+            android:summary="@string/pref_action_summary"
+            android:key="slaveAction"
+            android:entryValues="@array/actionValues"
+            android:entries="@array/actionNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ListPreference
+            android:title="@string/pref_network"
+            android:summary="@string/pref_network_summary"
+            android:key="slaveNetwork"
+            android:entryValues="@array/networkValues"
+            android:entries="@array/networkNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

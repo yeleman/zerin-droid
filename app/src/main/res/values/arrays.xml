@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actionNames">
+        <item name="airtime">Envoi de crédit</item>
+        <item name="mpayment">Envoi Orange Money</item>
+    </string-array>
+    <string-array name="actionValues">
+        <item name="airtime">airtime</item>
+        <item name="mpayment">mpayment</item>
+    </string-array>
+    <string-array name="networkNames">
+        <item name="orange">Orange Mali</item>
+        <item name="malitel">Malitel</item>
+    </string-array>
+    <string-array name="networkValues">
+        <item name="orange">orange</item>
+        <item name="malitel">malitel</item>
+    </string-array>
+</resources>
